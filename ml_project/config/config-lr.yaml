@@ -1,0 +1,14 @@
+input_data_path: "data/heart.csv"
+output_model_path: "models/model.pkl"
+metric_path: "models/metrics.json"
+splitting_params:
+  val_size: 0.2
+  random_state: 13
+model_params:
+  model_type: 'RandomForestClassifier'
+  criterion: 'entropy'
+  max_depth: 2
+  min_samples_leaf: 5
+  min_samples_split: 17
+  n_estimators: 19
+  n_jobs: -1
