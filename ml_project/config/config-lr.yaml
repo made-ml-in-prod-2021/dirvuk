@@ -5,10 +5,5 @@ splitting_params:
   val_size: 0.2
   random_state: 13
 model_params:
-  model_type: 'RandomForestClassifier'
-  criterion: 'entropy'
-  max_depth: 2
-  min_samples_leaf: 5
-  min_samples_split: 17
-  n_estimators: 19
+  model_type: 'LinearRegression'
   n_jobs: -1
