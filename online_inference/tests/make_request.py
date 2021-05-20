@@ -2,9 +2,10 @@ import numpy as np
 import pandas as pd
 import requests
 
+TESTFILE_PATH = "tests/train_data_sample.csv"
+
 if __name__ == "__main__":
-    sample = pd.read_csv("tests/train_data_sample.csv")
-    columns = columns = ['cp', 'trestbps', 'restecg', 'slope', 'ca', 'thal']
+    sample = pd.read_csv(TESTFILE_PATH)
     for i in range(10):
         request_data = [
             x.item() if isinstance(x, np.generic) else x for x in sample.iloc[i].tolist()
